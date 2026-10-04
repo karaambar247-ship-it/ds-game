@@ -272,6 +272,7 @@
         });
         currentRoomId = code;
         listenToRoom(code);
+        showScreen('room');   // <-- FIX
         toast('Oda oluşturuldu!');
       } catch (e) { toast('Hata: ' + e.message); }
     }
@@ -292,6 +293,7 @@
         });
         currentRoomId = code;
         listenToRoom(code);
+        showScreen('room');   // <-- FIX
         toast('Odaya katıldın!');
       } catch (e) { toast('Hata: ' + e.message); }
     }
